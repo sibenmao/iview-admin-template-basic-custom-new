@@ -1,0 +1,18 @@
+// @prefix: ~"count-to";
+
+// .@{prefix}-wrapper{
+//   .content-outer{
+//     display: inline-block;
+//     .@{prefix}-unit-text{
+//       font-style: normal;
+//     }
+//   }
+// }
+.count-to-wrapper {
+    .content-outer {
+        display: inline-block;
+        .count-to-unit-text {
+            font-style: normal;
+        }
+    }
+}

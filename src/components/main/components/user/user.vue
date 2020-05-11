@@ -1,0 +1,59 @@
+<template>
+    <div class="user-avatar-dropdown">
+        <Dropdown @on-click="handleClick">
+            <Badge :dot="!!messageUnreadCount">
+                <Avatar :src="userAvatar" />
+            </Badge>
+            <Icon :size="18" type="md-arrow-dropdown"></Icon>
+            <DropdownMenu slot="list">
+                <DropdownItem name="message"> 消息中心<Badge style="margin-left: 10px" :count="messageUnreadCount"></Badge> </DropdownItem>
+                <DropdownItem name="logout">退出登录</DropdownItem>
+            </DropdownMenu>
+        </Dropdown>
+    </div>
+</template>
+
+<script>
+import './user.scss';
+// import { mapActions } from 'vuex'
+export default {
+    name: 'User',
+    props: {
+        userAvatar: {
+            type: String,
+            default: '',
+        },
+        messageUnreadCount: {
+            type: Number,
+            default: 0,
+        },
+    },
+    methods: {
+        // ...mapActions(['handleLogOut']),
+        logout() {
+            this.$Message.infor('登出接口未开发');
+            // this.handleLogOut().then(() => {
+            //     this.$router.push({
+            //         name: 'login',
+            //     });
+            // });
+        },
+        message() {
+            this.$Message.infor('信息接口未开发');
+            // this.$router.push({
+            //     name: 'message_page',
+            // });
+        },
+        handleClick(name) {
+            switch (name) {
+                case 'logout':
+                    this.logout();
+                    break;
+                case 'message':
+                    this.message();
+                    break;
+            }
+        },
+    },
+};
+</script>
