@@ -4,6 +4,7 @@ export default {
     template: 'template management',
     template_curd: 'template curd',
     template_table: 'template table',
+    template_form: 'template form',
     test: 'test management',
     test_record: 'test record',
     test_current: 'test current',

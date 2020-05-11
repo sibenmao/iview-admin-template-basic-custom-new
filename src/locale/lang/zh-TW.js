@@ -4,6 +4,7 @@ export default {
     template: '模板管理',
     template_curd: '增刪改查',
     template_table: '表格模板',
+    template_form: '表單模板',
     test: '測試管理',
     test_record: '測試記錄',
     test_current: '當前測試',

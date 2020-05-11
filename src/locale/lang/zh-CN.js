@@ -4,10 +4,10 @@ export default {
     template: '模板管理',
     template_curd: '增删改查',
     template_table: '表格模板',
+    template_form: '表单模板',
     test: '测试管理',
     test_record: '测试记录',
     test_current: '当前测试',
-    
     // components: '组件',
     // count_to_page: '数字渐变',
     // tables_page: '多功能表格',

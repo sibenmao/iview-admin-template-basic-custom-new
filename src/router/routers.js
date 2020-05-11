@@ -51,6 +51,15 @@ export default [
                     title: '表格模板',
                 },
                 component: () => import('@/views/template/table'),
+            },
+            {
+                path: 'template_form',
+                name: 'template_form',
+                meta: {
+                    icon: 'md-grid',
+                    title: '表单模板',
+                },
+                component: () => import('@/views/template/form'),
             }
         ]
     },
@@ -82,5 +91,25 @@ export default [
                 component: () => import('@/views/test/current'),
             }
         ]
-    }
+    },
+    // {
+    //     path: '/wheel',
+    //     name: 'wheel',
+    //     meta: {
+    //         icon: 'logo-buffer',
+    //         title: '轮子管理',
+    //     },
+    //     component: Main,
+    //     children: [
+    //         {
+    //             path: 'wheel_betterScroll',
+    //             name: 'wheel_betterScroll',
+    //             meta: {
+    //                 icon: 'ios-sunny',
+    //                 title: 'M 端滚动',
+    //             },
+    //             component: () => import('@/views/wheel/better-scroll'),
+    //         }
+    //     ]
+    // },
 ];
